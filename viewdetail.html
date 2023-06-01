@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="viewdetail.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Nike Air
+        </div>
+        <div class="bar">
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="products.html">Featured Brands</a></li>
+        </ul>
+    </nav>
+    <div class="title-box">
+        <div class="p-title">
+            <h1>More Information</h1>
+        </div>
+    </div>
+    <div class="container detail-container">
+        <div class="white-space">
+            <div class="leftside">
+                <img src="images/img2.png" alt="">
+            </div>
+            <div class="rightside">
+                <div class="tbp-box">
+                    <span class="title-span">Nike Red Airsoft 2023</span>
+                    <span class="brand-span">Airsoft 2023</span>
+                    <span class="price-span">$345.00</span>
+                </div>
+                <div class="desciption-box">
+                    <span>Description</span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae labore tempora autem odit, a reiciendis et. Quae reprehenderit voluptate culpa, velit ipsum expedita aspernatur adipisci fugit aliquam! Magni, enim maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, eligendi?</p>
+                </div>
+                <div class="container ccq-box">
+                    <div class="container smol-box">
+                        <div class="sub-smol-box">
+                            <span class="smol-box-title">Color</span>
+                        </div>
+                        <div class="sub-smol-box">
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="container smol-box">
+                        <div class="sub-smol-box">
+                            <span class="smol-box-title">Category</span>
+                        </div>
+                        <div class="sub-smol-box">
+                            <span class="smol-box-cat">( Men )</span>
+                        </div>
+                        
+                    </div>
+                    <div class="container smol-box2">
+                        <div class="sub-smol-box2">
+                            <span class="smol-box-title">QTY</span>
+                        </div>
+                        <div class="sub-smol-box2">
+                            <select name="qty" id="qty" title="qty" class="form-select qtyselect-box">
+                                <option value="1">(1)</option>
+                                <option value="2">(2)</option>
+                                <option value="3">(3)</option>
+                                <option value="4">(4)</option>
+                                <option value="5">(5)</option>
+                            </select>
+                            <img src="icons/icons8-sort-down-24.png" style="height: 15px;" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container bottom-container">
+                    <button class="btn btn-outline-dark btn-trolley" onmouseover="hoveron()" onmouseout="hoverout()">Add to Cart<img src="icons/icons8-trolley-50.png" id="img" style="height:35px" alt=""></button>
+                    <img src="icons/icons8-share-30.png" style="height:30px" id="img2" onmouseover="mouseon()" onmouseout="mouseout()" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>   
+
+    <script>
+        image = document.getElementById('img');
+        image2 = document.getElementById('img2');
+        function hoveron(){
+            image.src = "icons/icons8-trolley-50 (1).png";
+        }
+
+        function hoverout(){
+            image.src = "icons/icons8-trolley-50.png";
+        }
+        function mouseon(){
+            image2.src = "icons/icons8-share-30 (1).png";
+        }
+
+        function mouseout(){
+            image2.src = "icons/icons8-share-30.png";
+        }
+    </script>
+
+</body>
+
+</html>

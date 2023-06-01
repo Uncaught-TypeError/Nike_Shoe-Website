@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap');
+
+body {
+    background-color: #fbfbfb;
+    }
+    @media (min-width: 991.98px) {
+    main {
+    padding-left: 240px;
+    }
+    }
+    
+    /* Sidebar */
+    .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+    }
+    
+    @media (max-width: 991.98px) {
+    .sidebar {
+    width: 100%;
+    }
+    }
+    .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    }
+    
+    .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+
+    .msg{
+        background: rgb(187, 216, 255);
+        height: 80px;
+        font-size: 16px;
+        font-weight: 500;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        color: black;
+        display: flex;
+        align-items: center;
+    }
+
+    .form-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(245, 245, 245);
+    }
+
+    .form-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-line{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* background: lightcoral; */
+        width: 1000px;
+        margin-bottom: 25px;
+    }
+    .form-line2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* background: lightcoral; */
+        width: 700px;
+        margin-bottom: 25px;
+    }
+
+    .form-input-box{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        /* background: lightblue; */
+        justify-content: center;
+        width: 400px;
+    }
+
+    .form-input-box2{
+        padding: 20px;
+        /* background: lightblue; */
+        width: 400px;
+    }
+
+    .form-input{
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgb(196, 196, 196);
+    }
+
+    .form-label{
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .form-label2{
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    
+    input[class="form-input"]{
+        padding-left: 10px;
+        color: black;
+        font-size: 17px;
+        /* font-weight: 500; */
+    }
+    
+    .textarea-box{
+        border-radius: 5px;
+        border: 1px solid rgb(196, 196, 196);
+        padding: 10px;
+    }
+
+    input[class="textarea-box"]{
+        padding-left: 10px;
+        color: black;
+        font-size: 17px;
+    }
+
+    .createbutton{
+        width: 75px;
+        height: 40px; 
+        border-radius: 5px;
+        font-size: 16px;
+        /* font-weight: bold; */
+        text-transform: uppercase;
+        cursor: pointer;
+        color: black;
+        background: rgb(255, 255, 255);
+        border: 1px solid black;
+    }
+
+    .createbutton:hover{
+        background: rgb(0, 0, 0);
+        color: white;
+        border: 1px solid white;
+    }
+
+    /* Admin Product Page */
+
+    .title-box{
+        /* background: lightblue; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .p-title{
+        /* background: red; */
+        padding: 10px;
+        width: 1100px;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .p-title h1{
+        font-size: 2.2rem;
+        text-transform: capitalize;
+        font-weight: 300;
+    }

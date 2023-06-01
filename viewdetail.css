@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.detail-container{
+    background: rgb(238, 238, 238);
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    flex-direction: row;
+    border-radius: 25px;
+}
+
+.white-space{
+    flex-direction: row;
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-radius: 25px;
+}
+.leftside{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: lightcoral; */
+}
+
+.leftside img{
+    width: 100%;
+    height: 650px;
+    border-radius: 25px;
+}
+
+.rightside{
+    /* background: lightpink; */
+    width: 55%;
+}
+
+.tbp-box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.title-span{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.brand-span{
+    font-style: italic;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(168, 168, 168);
+    text-transform: uppercase;
+}
+.price-span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+
+.category-span{
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.desciption-box{
+    /* background: lightblue; */
+    padding: 20px;
+    padding-right: 50px;
+}
+
+.desciption-box span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+}
+
+.desciption-box p{
+    padding-top: 10px;
+    font-weight: lighter;
+    font-family: 'Oswald', sans-serif;
+    /* text-align: justify; */
+    font-size: 18px;
+}
+
+.ccq-box{
+    display: flex;
+    /* background: lightblue; */
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+
+.smol-box{
+    /* background: lightpink; */
+    display: inline-block;
+    /* width: 32%; */
+    padding: 5px;
+    border-right: 2px solid rgb(207, 207, 207);
+}
+
+.smol-box2{
+    /* background: lightpink; */
+    display: inline-block;
+    /* width: 32%; */
+    padding: 5px;
+}
+
+.sub-smol-box{
+    /* background: lightgoldenrodyellow; */
+    padding-top: 5px;
+}
+.sub-smol-box2{
+    /* background: lightgoldenrodyellow; */
+    padding-top: 5px;
+    display: flex;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 0, 0);
+    border: 1px solid rgb(94, 94, 94);
+    margin-top: 5px;
+}
+
+.dot:hover{
+    background: rgb(179, 0, 0);
+}
+
+.smol-box-title{
+    font-weight: 700;
+    /* font-family: 'Oswald', sans-serif; */
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.smol-box-cat{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: rgb(119, 119, 119);
+}
+
+.qtyselect-box{
+    width: 70px;
+    border: none;
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    margin-top: -10px;
+    background: none;
+    color: rgb(119, 119, 119);
+    outline: none;
+}
+
+.sub-smol-box2 img{
+    margin-left: -35px;
+    margin-top: 4px;
+}
+
+.btn-trolley{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.btn-trolley img{
+    padding-left: 7px;
+}
+
+.bottom-container{
+    display: flex;
+    /* background: lightsalmon; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}

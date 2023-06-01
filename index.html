@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Nike Air
+        </div>
+        <div class="bar">
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="products.html">Featured Brands</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        <div>
+            <span>Welcome to Nike Air</span>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/shoe8.jpg" style="width:100%" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/desktop-banner-1920x850-fed1ed6d63622ab3ba60e8b6ae354ca9.jpg" style="width:100%" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/shoe9.jpg" style="width:100%" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/shoe1.jpg" style="width:100%" alt="">
+        </div>
+        <div style="text-align:center;">
+            <span class="dot" onclick="currentSlide(0)"></span> &nbsp;
+            <span class="dot" onclick="currentSlide(1)"></span> &nbsp;
+            <span class="dot" onclick="currentSlide(2)"></span> &nbsp;
+            <span class="dot" onclick="currentSlide(3)"></span> &nbsp;
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/img1.png" alt="">
+                <div class="layer">
+                    <span>Product</span>
+                </div>
+                <p>I'm a product</p>
+                <p>$799.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img2.png" alt="">
+                <div class="layer">
+                    <span>Product</span>
+                </div>
+                <p>I'm a product</p>
+                <p>$299.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img3.png" alt="">
+                <div class="layer">
+                    <span>Product</span>
+                </div>
+                <p>I'm a product</p>
+                <p>$399.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img4.png" alt="">
+                <div class="layer">
+                    <span>Product</span>
+                </div>
+                <p>I'm a product</p>
+                <p>$699.99</p>
+            </div>
+        </div>
+    </div>
+    <div class="big-container">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-3">
+                    <div style="margin-bottom: 20px;">
+                        <span class="s1">MORE ABOUT US</span>
+                    </div>
+                    <div style="margin-top: 10px; margin-bottom: 20px;">
+                        <span class="s2">We Care For Footwear</span>
+                    </div>
+                    <div style="margin-top: 10px; width: 80%;">
+                        <span class="s3">At Nike Air, we are dedicated to carrying your favorite designers and showcasing their latest collections. We make sure to offer you outstanding value without compromising on quality. All online orders are inspected prior to shipment to ensure that your package arrives in perfect condition. Are you ready to find your next favorite pair of shoes?</span>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="tiny-container">
+            <div class="centeringspan">
+                <span class="span1">CONTACT US</span>
+            </div>
+            <div class="centeringspan">
+                <span class="span2">500 Terry Francois Street, 6th Floor. San Francisco, CA 94158</span>
+            </div>
+            <div class="centeringspan">
+                <span class="span3">aungchitminn.dev@gmail.com</span>
+            </div>
+            <div class="centeringspan">
+                <span class="span4">123-456-7890</span>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <div class="tiny-container">
+            <div class="centeringspan">
+                <span class="span5">Nike Air</span>
+            </div>
+            <div class="centeringspan">
+                <span class="span2">aungchitminn.dev@gmail.com</span>
+            </div>
+            <div class="centeringspan">
+                <span class="span3">©2023 by Nike Air. Proudly created by Nick</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script>
+        let slideIndex = 0;
+        let timeoutId = null;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+        
+        showSlides();
+        function currentSlide(index) {
+            slideIndex = index;
+            showSlides();
+        }
+    function plusSlides(step) {
+        
+        if(step < 0) {
+            slideIndex -= 2;
+            
+            if(slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+        }
+        
+        showSlides();
+    }
+    function showSlides() {
+        for(let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].classList.remove('active');
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add('active');
+        if(timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+</body>
+</html>
